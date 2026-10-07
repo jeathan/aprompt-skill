@@ -1,3 +1,5 @@
+**简体中文** | [English](README.en.md)
+
 # A+Prompt · 双引擎图片提示词优化 Skill
 
 把一条图片生成提示词（或图片修改需求）优化成**两份**可直接复制使用的成品提示词：
@@ -31,7 +33,7 @@
 把这个仓库放进你的 skills 目录即可。以 DSH 为例：
 
 ```bash
-git clone https://github.com/<your-name>/aprompt-skill.git
+git clone https://github.com/jeathan/aprompt-skill.git
 # 然后复制到 DSH 的 skills 目录
 cp -r aprompt-skill ~/.dsh/skills/aprompt
 ```
@@ -39,7 +41,7 @@ cp -r aprompt-skill ~/.dsh/skills/aprompt
 Windows PowerShell：
 
 ```powershell
-git clone https://github.com/<your-name>/aprompt-skill.git
+git clone https://github.com/jeathan/aprompt-skill.git
 Copy-Item -Recurse .\aprompt-skill "$env:USERPROFILE\.dsh\skills\aprompt"
 ```
 
@@ -65,7 +67,9 @@ Claude Code 用户可放到 `~/.claude/skills/aprompt/`。
 ├── references/
 │   ├── nano-banana-2-pro.md        # Google DeepMind 官方写法 + fal.ai 指南整理（离线参考）
 │   └── gpt-image-2.md              # OpenAI 官方 Image Prompting 指南整理（离线参考）
-└── README.md
+├── README.md                       # 简体中文（本文件）
+├── README.en.md                    # English
+└── LICENSE
 ```
 
 `references/` 里的两份文件是离线参考，Agent 执行时会读取，不需要联网。
